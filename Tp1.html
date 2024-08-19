@@ -4,20 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tp1 HTML Desarrollo Nicolás Correa</title>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="font-weight: 1000">Titulo principal de la página en H1</h1>
-    <h2>Subtitulo de la página en H2</h2>
-    <h3>Temas a discutir en H3</h3>
-    <ul>Lista a continuacion
-        <li>Nombre de la mascota a adoptar</li>
-        <li>Nombre del grupo de Desarrollo de Software</li>
-        <li>Fecha de cuando nos juntamos a jugar al futbol</li>
-    </ul>
+    <header>
+        <h1 style="font-weight: 1000; text-align: center;">Encabezado principal de la página en H1</h1>
+        <ol>
+            <li> <a href="#estructura">Estructura</a></li>
+            <li><a href="#titulos">Muestra de títulos</a></li>
+            <li><a href="#division">Divisores</a></li>
+            <li><a href="#listas">Listas y enlaces</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ol>
+    </header>
 
+    <section id="estructura">
+        <h1>1. Estructura básica del documento html</h3>
+            <p>Este documento html sigue un conjunto de bases como la declaración del DOCTYPE, etiquetas, metadatos y
+                estilos</p>
+    </section>
 
+    <section id="titulos">
+        <h1>2. Encabezados y títulos</h1>
+        <h1>Titulo en h1</h1>
+        <h2>Título de la página en H2</h2>
+        <h3>Título de la página en H3</h3>
+        <h4>Título de la página en H4</h4>
+        <h5>Título de la página en H5</h5>
+        <h6>Título de la página en H6</h6>
+    </section>
+
+    <section id="division">
+        <h1>3. Divisores</h1>
+            <div style="font-style: italic;">
+                <h4>Título del bloque de contenido en cursiva</h4>
+                <p>texto dentro del bloque de contenido en cursiva</p>
+            </div>
+            <div style="text-decoration: underline;">
+                <h4>Título del bloque de contenido subrayado</h4>
+                <p>texto dentro del bloque de contenido subrayado</p>
+            </div>
+    </section>
+
+    <Section id="listas">
+        <h1>4. Listas y enlaces</h1>
+
+            <p>Puede seguir <a href="https://campus.frm.utn.edu.ar/">este link</a> para poder ingresar al campus virtual</p>
+
+            <ul>
+                <li>Primer elemento de una lista sin orden</li>
+                <li>Segundo elemento de una lista sin orden</li>
+                <li>Tercer elemento de una lista sin orden</li>
+            </ul>
+            <ol>
+                <li>Primer elemento de una lista ordenada</li>
+                <li>Segundo elemento de una lista ordenada</li>
+                <li>Tercer elemento de una lista ordenada</li>
+            </ol>
+    </Section>
+
+    <section id="multimedia">
+        <h1>5. Multimedia</h1>
+        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg" alt="Una imágen" width="500px">
+        <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"" controls></audio>
+        <video src=" https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </section>
+
+    <section id="Tabla">
+        <h1>6. Tabla</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="formulario">
+        <h1>7. Formulario</h1>
+        <form>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre completo">
+                <label>Email</label>
+                <input type="email" placeholder="Ingrese su dirección de email">
+                <label>Mensaje a enviar</label>
+                <textarea></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
